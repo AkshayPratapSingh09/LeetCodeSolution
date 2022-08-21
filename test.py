@@ -9,3 +9,5 @@ def reversal(a):
     print(rev)
 
 reversal(a)
+
+# this is and example
