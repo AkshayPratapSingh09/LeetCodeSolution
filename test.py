@@ -1,13 +1,10 @@
-a = [78,65,43,23,1]
-
-def reversal(a):
-    n = len(a)
-    rev = [0] * n
-    # print(rev)
-    for i in range(n):
-        rev[n-i-1] = a[i]
-    print(rev)
-
-reversal(a)
-
-# this is and example
+nums1 = [1,2,3,0,0,0]
+nums2 = [2,5,6]
+nums1.sort()
+nums1 = list(set(nums1))
+nums2.sort()
+nums2 = list(set(nums2))
+nums1.extend(nums2)
+if nums1[0] == 0:
+    nums1.remove(0)
+print(nums1)
