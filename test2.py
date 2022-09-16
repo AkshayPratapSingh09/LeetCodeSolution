@@ -1,13 +1,15 @@
-nums = [0,0,0]
-ans = []
+from cmath import inf
 
-for i in range(0,len(nums)):
-    for j in range(len(nums)-1):
-        for k in range(len(nums)-2):
-            if i != j and i != k and j != k and nums[i] + nums[j] + nums[k] == 0:
-                case = [nums[i],nums[j],nums[k]]
-                case.sort()
-                if case in ans:
-                    continue
-                ans.append(case)
-print(ans)
+
+def maxSubArray(nums):
+    case = -inf
+    for i in range(len(nums)):
+        sum = 0
+        for j in range(i, len(nums)):
+            print("i is",i,"j is ",j)
+            sum += nums[j]
+        case = max(case, sum)
+    return case
+
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+print(maxSubArray(nums))
