@@ -1,13 +1,16 @@
-num = [-1,0,1,2,-1,-4]
-ls = [[i,j,k] for i in num for j in num for k in num if i != j and i != k and j != k]
-ans = []
-for element in ls:
-    if element[0] + element[1] + element[2] == 0:
-        element.sort()
-        if element in ans:
-            continue
-        ans.append(element)
-    
-
-# print(len(ls))
-print(ans)
+s = "au"
+if len(s)==1:
+     print(1)
+else:
+    ans = 0
+    stack = []
+    count = 0
+    for i in s:
+        if i in stack:
+            ans = max(ans, len(stack))
+            stack = []
+        count += 1
+        stack.append(i)
+        ans = max(ans, len(stack))
+        print(stack)
+    print(ans)

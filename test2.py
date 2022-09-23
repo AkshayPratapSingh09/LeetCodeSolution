@@ -1,5 +1,3 @@
-from cmath import inf
-
 
 def maxSubArray(nums):
     case = -inf
