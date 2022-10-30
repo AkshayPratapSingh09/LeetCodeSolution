@@ -1,4 +1,18 @@
-nums1 = [1,2,3,4,5]
-l = len(nums1)
-# print((nums1[((l+1)/2)+1] + nums1[((l+1)/2)+2])/2)
-print(((l+1)/2)+1) 
+
+B = [ "i", "like", "sam",
+"sung", "samsung", "mobile",
+"ice","cream", "icecream",
+"man", "go", "mango" ]
+
+A = "ilike"
+
+# for i in range(len(B)):
+#     print(B[i])
+stack = [f for f in A]
+initial = stack[0]
+for a in B:
+    if initial == a[0]:
+        # print("Condition S")
+        if a == " ".join(stack[:len(a)]):
+            # print("True")
+# print(stack)
