@@ -1,17 +1,11 @@
-def findMedianSortedArrays(nums1, nums2):
-        nums1.extend(nums2)
-        nums1.sort()
-        l = len(nums1)
-        print(l)
-        if l ==0:
-            return
-        if l%2 ==0:
-            print(((l+1)/2)+1)
+s = "leetcode"
+words = ["leet", "code"]
+dp = [False] * (len(s)+1)
+dp[len(s)] = True
+print(dp)
 
-        if l%2 !=0:
-            print(((l+1)/2)) 
-            print((int((l+1)/2)+1)/2)
-
-nums1 = [1,3]
-nums2 = [2]
-print(findMedianSortedArrays(nums1,nums2))
+for i in range(len(s) -1, -1,-1):
+    print(i)
+    for w in words:
+        print("Word here:",w,"  len here:",len(w))
+        print(s[i:i+len(w)])
