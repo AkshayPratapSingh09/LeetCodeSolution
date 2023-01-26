@@ -3,5 +3,5 @@ n = 7
 
 stack = []
 
-for i in range():
+# for i in range():
     
