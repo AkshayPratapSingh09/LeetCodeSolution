@@ -23,6 +23,7 @@ for r in dig:
         print(st)
     if len(st)!=len(dig):
         r = r + 1
+print(func(10,5))
        
 # func(2,0)
         # func()
