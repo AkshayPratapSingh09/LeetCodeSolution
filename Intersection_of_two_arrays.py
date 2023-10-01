@@ -7,3 +7,5 @@ def solution(nums1,num2):
             if i == j:
                 l3.append(i)
     return list(set(l3))
+
+print(solution(2,10))
